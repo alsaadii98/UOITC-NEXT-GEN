@@ -1,0 +1,80 @@
+---------------------------- NAVBAR -------------------------------
+import React, {useState} from 'react';
+import {Link} from "react-router-dom";
+import {MenuAlt3Icon, XIcon} from '@heroicons/react/solid'
+
+
+const Navbar = () => {
+    const links = [
+        {name: 'Home', path: '/'},
+        {name: 'Colleges', path: '/'},
+        {name: 'Centers & Dep', path: '/'},
+        {name: 'Services', path: '/'},
+        {name: 'Media', path: '/'},
+        {name: 'I3CAT', path: 'https://i3cat.org/'},
+        {name: 'NTICT21', path: '/'},
+    ]
+
+    const [open, setOpen] = useState(false)
+
+    return (<div>
+
+        <div className={'shadow-md w-full fixed top-0 left-0'}>
+            <div className={'md:flex items-center justify-between bg-white py-4 md:px-28 px-7'}>
+
+                <div className={'font-bold text-2xl cursor-pointer flex items-center font-[Poppins]'}>
+                    <h1 className={'text-3xl text-red-800 pt-2'}>
+                        UOITC
+                    </h1>
+                </div>
+                <div onClick={() => setOpen(!open)}
+                     className={'text-3xl absolute right-8 top-6 cursor-pointer md:hidden'}>
+                    {open ? <XIcon className="h-7 w-7 text-red-800"/> :
+                        <MenuAlt3Icon className="h-7 w-7 text-red-800"/>}
+                </div>
+                <ul className={`md:flex md:items-center md:pb-0 pb-12
+                    absolute md:static bg-white md:z-auto z-[-1] right-0 w-80 h-screen md:h-auto md:w-auto md:pl-0 pl-9
+                    transition-all duration-500 ease-in ${open ? 'top-18 opacity-100':'top-18 right-[-490px]'}
+                    md:opacity-100 shadow-lg md:shadow-none`}>
+                    {
+                        links.map((item, index) => {
+                            return <li key={index} className={'md:ml-8 text-sm md:my-0 my-7'}>
+                                <Link to={item.path} className={'text-gray-700 hover:text-red-800 duration-500'}>
+                                    {item.name}
+                                </Link>
+                            </li>
+                        })
+                    }
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>);
+};
+
+export default Navbar;
+---------------------------- NAVBAR -------------------------------
+---------------------------- DropDown -----------------------------
+{/*DropDown Menu*/}
+                {/*<div ref={menuRef}*/}
+                {/*    className={'flex items-center space-x-2 cursor-pointer hover:text-red-800 duration-300 ease-in-out '}*/}
+                {/*    onClick={() => setOpen(!open)}>*/}
+                {/*    <li className={'flex flex-wrap space-x-4'}>*/}
+                {/*        Services*/}
+                {/*        <ul className={`absolute w-56 right-24 top-16 rounded-sm shadow-lg bg-gray-100 */}
+                {/*            text-left flex flex-col ${open ? 'block' : 'hidden'}`}>*/}
+                {/*            <li className={'py-4 px-4 hover:bg-gray-50 w-full'}>*/}
+                {/*                <a href={'/'}>Home1</a>*/}
+                {/*            </li>*/}
+                {/*            <li className={'py-4 px-4 hover:bg-gray-50 w-full'}>Home1</li>*/}
+                {/*            <li className={'py-4 px-4 hover:bg-gray-50 w-full'}>Home1</li>*/}
+                {/*            <li className={'py-4 px-4 hover:bg-gray-50 w-full'}>Home1</li>*/}
+                {/*        </ul>*/}
+                {/*    </li>*/}
+                {/*    /!*Icon*!/*/}
+                {/*    <ChevronRightIcon*/}
+                {/*        className={`-mr-1 ml-2 h-5 w-5 ${open ? 'transition-all duration-300 ease-in-out rotate-90' : 'transition-all duration-300 ease-in-out rotate-0'}`}/>*/}
+                {/*</div>*/}
+---------------------------- DropDown -----------------------------
