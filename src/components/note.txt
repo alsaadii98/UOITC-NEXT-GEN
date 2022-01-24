@@ -78,3 +78,56 @@ export default Navbar;
                 {/*        className={`-mr-1 ml-2 h-5 w-5 ${open ? 'transition-all duration-300 ease-in-out rotate-90' : 'transition-all duration-300 ease-in-out rotate-0'}`}/>*/}
                 {/*</div>*/}
 ---------------------------- DropDown -----------------------------
+---------------------------- Carousel -----------------------------
+    const [slideIndex, setSlideIndex] = useState(1)
+    const nextSlide = () => {
+        if(slideIndex !== carouselData.length){
+            setSlideIndex(slideIndex+1)
+        }
+        else if (slideIndex === carouselData.length){
+            setSlideIndex(1)
+        }
+    }
+    const prevSlide = () => {
+        if(slideIndex !== 1){
+            setSlideIndex(slideIndex-1)
+        }
+        else if (slideIndex === 1){
+            setSlideIndex(CarouselData.length)
+        }
+    }
+    const moveDot = (index) =>{
+        setSlideIndex(index)
+    }
+    return (
+        <div className={'container-slider'}>
+            {
+                CarouselData.map((item, index) => {
+                    return (
+                        <div className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'} key={item.id}>
+                            <img src={process.env.PUBLIC_URL + require(`../../assets/img/Img${index + 1}.jpg`)}/>
+                            <p className={'absolute top-0 text-center'}>{item.title}</p>
+                        </div>
+                    );
+                })
+            }
+            <BtnSlider moveSlide={nextSlide} direction={'next'}/>
+            <BtnSlider moveSlide={prevSlide} direction={'prev'}/>
+            <div className={'container-dots'}>
+                {
+                    Array.from({length:3}).map((item,index)=>{
+                        return (
+                            <div
+                                onClick={()=> moveDot(index +1)}
+                                className={slideIndex === index + 1 ? 'dot active' : 'dot'}>
+
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+
+
+    );
+    ---------------------------- Carousel -----------------------------

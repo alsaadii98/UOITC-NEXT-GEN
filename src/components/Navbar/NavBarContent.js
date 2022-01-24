@@ -26,7 +26,7 @@ const NavBarContent = (props) => {
                     {name:'Digital Contents',path:'https://dc.uoitc.edu.iq/'},
                     {name:'Open Data',path:'https://uoitc.edu.iq/page569874saso.php'},
                     {name:'Citizens Affairs',path:'https://www.uoitc.edu.iq/affairs.php'},
-                    {name:'Ios App',path:'https://apps.apple.com/us/app/uoitc/id1496550016'},
+                    {name:'iOS App',path:'https://apps.apple.com/us/app/uoitc/id1496550016'},
                     {name:'Android App',path:'https://play.google.com/store/apps/details?id=iq.edu.uoitc'},
                 ]
                 }/>

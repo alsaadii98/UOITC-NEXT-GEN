@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf4c2a3-4b04-4ed5-9412-177bd037d3e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/DropDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/MobileNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/note.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/Img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/Img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/Img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,7 +63,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahals\Desktop\React\giz-finalproject\public" />
+      <recent name="C:\Users\ahals\Desktop\React\giz-finalproject\src\assets\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ahals\Desktop\React\giz-finalproject\src\assets\img" />
       <recent name="C:\Users\ahals\Desktop\React\giz-finalproject\src\components\Navbar" />
     </key>
   </component>
@@ -86,7 +96,14 @@
       <workItem from="1642625649797" duration="1866000" />
       <workItem from="1642627539810" duration="308000" />
       <workItem from="1642672421404" duration="1313000" />
-      <workItem from="1642680996261" duration="19800000" />
+      <workItem from="1642680996261" duration="20756000" />
+      <workItem from="1642756658395" duration="686000" />
+      <workItem from="1642775219866" duration="17726000" />
+      <workItem from="1642861980664" duration="945000" />
+      <workItem from="1642883093987" duration="1535000" />
+      <workItem from="1642945730568" duration="1344000" />
+      <workItem from="1643028079521" duration="5119000" />
+      <workItem from="1643054958174" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary="More Dir">
       <created>1642280249950</created>
