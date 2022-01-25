@@ -6,7 +6,9 @@ module.exports = {
     extend: {},
     colors: {
       'sub':'#727272',
-      'main':'#555555'
+      'main':'#555555',
+      'heroColor1':'#F3FEE2',
+      'heroColor2':'#DFE9FE;'
     },
   },
   plugins:  [

@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf4c2a3-4b04-4ed5-9412-177bd037d3e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/Img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Latest Articles/LatestArticles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Latest Articles/LatestArticles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/note.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -103,7 +92,8 @@
       <workItem from="1642883093987" duration="1535000" />
       <workItem from="1642945730568" duration="1344000" />
       <workItem from="1643028079521" duration="5119000" />
-      <workItem from="1643054958174" duration="651000" />
+      <workItem from="1643054958174" duration="3489000" />
+      <workItem from="1643111310624" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="More Dir">
       <created>1642280249950</created>

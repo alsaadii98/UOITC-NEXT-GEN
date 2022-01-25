@@ -40,51 +40,37 @@ export default class SimpleSlider extends Component {
                     {data.map((item, index) => {
                         return (
                             <div
-                                className={"pt-20 md:px-20 flex justify-center item-center "}
+                                className={"flex justify-center item-center "}
                                 key={index}
                             >
                                 <div
                                     className={
-                                        " flex lg:flex-row flex-col-reverse w-full justify-center items-center  "
+                                        "m-20   flex lg:flex-row flex-col-reverse w-full justify-center items-center  "
                                     }
                                 >
-                                    <div className={" p-4 px-10  lg:space-y-7 space-y-2 "}>
-                                        <h1 className={'text-left font-semibold leading-normal text-2xl md:text-3xl lg:text-4xl text-red-800'}>{item.title}</h1>
-                                        <p className={"text-main w-full text-left"}>{item.text}</p>
+                                    <div className={"lg:space-y-7 space-y-2 w-1/2"}>
+                                        <h1 className={'text-left block w-1/2 font-semibold leading-normal text-2xl md:text-3xl lg:text-4xl text-red-800'}>{item.title}</h1>
+                                        <p className={" block w-2/3 text-main w-full text-left"}>{item.text}</p>
                                         <button
-                                            className={
-                                                "bg-red-800 font-bold md:py-4 md:px-7 py-3 px-4 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500  "
-                                            }
-                                        >
+                                            className={"bg-red-800 font-bold md:py-4 md:px-7 py-3 px-4 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500  "}>
                                             Read More
                                         </button>
                                     </div>
 
-                                    <div className="flex relative">
+                                    <div className="flex justify-center w-1/2 relative">
                                         <div
-                                            className={
-                                                "w-14 h-14 sm:w-20 sm:h-20   md:w-24  md:h-24 lg:w-28 lg:h-28 xl:w-44 xl:h-44 bg-red-300 rounded-full absolute lg:-left-16 md:-left-12 -left-7 sm:-left-10 top-1  xl:-left-24  "
-                                            }
-                                        ></div>
+                                            className={"w-14 h-14 sm:w-20 sm:h-20   md:w-24  md:h-24 lg:w-28 lg:h-28 xl:w-44 xl:h-44 bg-heroColor2 rounded-full absolute -left-20  lg:-left-16 md:-left-12 -left-7 sm:-left-10 top-1  xl:-left-24  "}></div>
 
 
                                         <div
-                                            className={
-                                                "container mb-16 lg:mb-32 z-20 bg-cover bg-center  w-[21rem] h-[16rem] sm:w-[25rem] sm:h-[17rem] md:w-[30rem] md:h-[23rem] xl:w-[40rem] xl:h-[28rem] 2xl:w-[50rem] 2xl:h-[32rem] rounded-bl-[100px] sm:rounded-bl-[125px] md:rounded-bl-[175px] lg:rounded-bl-[200px] xl:rounded-bl-[250px] shadow-md overflow-hidden relative"
-                                            }
-                                        >
-                                            <img
-                                                className={"w-full h-full"}
-                                                src={require(`../../assets/img/Img${index + 1}.jpg`)}
-                                                alt={item.title}
-                                            />
+                                            className={"container mr-32 mb-16 lg:mb-32 z-20 bg-cover bg-center  w-[21rem] h-[16rem] sm:w-[25rem] sm:h-[17rem] md:w-[30rem] md:h-[23rem] xl:w-[40rem] xl:h-[28rem] 2xl:w-[50rem] 2xl:h-[32rem] rounded-bl-[100px] sm:rounded-bl-[125px] md:rounded-bl-[175px] lg:rounded-bl-[200px] xl:rounded-bl-[250px] shadow-md overflow-hidden relative"}>
+                                            <img className={"w-full h-full"}
+                                                 src={require(`../../assets/img/Img${index + 1}.jpg`)}
+                                                 alt={item.title}/>
                                         </div>
 
                                         <div
-                                            className={
-                                                "w-14 h-14 sm:w-20 sm:h-20   md:w-24  md:h-24 lg:w-28 lg:h-28  xl:w-44 xl:h-44 bg-green-200 rounded-br-[25px] md:rounded-br-[45px] lg:rounded-br-[65px] xl:rounded-br-[80px]   absolute z-10 top-56 left-48 sm:top-60 sm:left-72 sm:top-60 sm:left-72 md:top-80 md:left-80 lg:top-80 lg:left-80 xl:top-80 xl:mt-10 xl:left-96 2xl:top-96 2xl:mt-10 2xl:ml-20 2xl:left-96"
-                                            }
-                                        ></div>
+                                            className={"w-14 h-14 sm:w-20 sm:h-20   md:w-24  md:h-24 lg:w-28 lg:h-28  xl:w-44 xl:h-44 bg-heroColor1 rounded-br-[25px] md:rounded-br-[45px] lg:rounded-br-[65px] xl:rounded-br-[80px]   absolute z-10 top-56 left-48 sm:top-60 sm:left-72 sm:top-60 sm:left-72 md:top-80 md:left-80 lg:top-80 lg:left-80 xl:top-80 xl:mt-10 xl:left-96 2xl:top-96 2xl:mt-10 2xl:ml-20 2xl:left-96"}></div>
                                     </div>
                                 </div>
                             </div>
