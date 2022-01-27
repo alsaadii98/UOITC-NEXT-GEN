@@ -7,7 +7,7 @@ function Home() {
     <div>
       <Navbar />
       <HeroCarousel />
-      {/* <LatestArticles /> */}
+      <LatestArticles />
       {/* <Hero /> */}
     </div>
   );

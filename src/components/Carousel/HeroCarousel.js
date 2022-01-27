@@ -20,22 +20,22 @@ export default class SimpleSlider extends Component {
     const data = [
       {
         title: "Qualification and Employment Organizes a Photogram Workshop",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ",
+        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus ",
         img: "../assets/img/Img1.jpg",
       },
       {
-        title: "Tristique nulla aliquet enim tortor ",
-        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus gravida quis blandit turpis cursus. Rhoncus dolor purus non enim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Orci a scelerisque purus semper",
+        title: "Qualification and Employment Organizes a Photogram Workshop",
+        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus ",
         img: "../assets/img/Img2.jpg",
       },
       {
-        title: "Tristique nulla aliquet enim tortor ",
-        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus gravida quis blandit turpis cursus. Rhoncus dolor purus non enim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Orci a scelerisque purus semper",
+        title: "Qualification and Employment Organizes a Photogram Workshop",
+        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus ",
         img: "../assets/img/Img3.jpg",
       },
       {
-        title: "Tristique nulla aliquet enim tortor ",
-        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus gravida quis blandit turpis cursus. Rhoncus dolor purus non enim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Orci a scelerisque purus semper",
+        title: "Qualification and Employment Organizes a Photogram Workshop",
+        text: "Tristique nulla aliquet enim tortor at. Accumsan sit amet nulla facilisi morbi tempus iaculis. Sit amet purus ",
         img: "../assets/img/Img5.jpg",
       },
     ];
@@ -47,7 +47,7 @@ export default class SimpleSlider extends Component {
               <div key={index}>
                 <div className="flex justify-around lg:flex-row flex-col-reverse items-center lg:space-x-20 m-10 md:m-20 lg:my-20 lg:mx-10 ">
                   {/* Text & BTN */}
-                  <div className="lg:p-7 lg:w-1/2 md:space-y-3 space-y-2 ">
+                  <div className="lg:p-7 lg:w-1/2 space-y-3 ">
                     <h1 className={
                         "text-left block font-semibold leading-normal text-2xl lg:text-3xl xl:text-4xl text-red-800"
                       }>

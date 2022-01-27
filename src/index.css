@@ -2,6 +2,11 @@
     animation: fadeAnim 0.5s ease-in;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @keyframes fadeAnim {
     0% {
         opacity: 0;
