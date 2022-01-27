@@ -1,20 +1,10 @@
-.slick-dots {
-    bottom: 10px;
-    right: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-
-}
-
 .slick-dots li.slick-active button:before {
     color: #A62B2D;
 }
 
 .slick-dots li button:before {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
 
@@ -27,6 +17,10 @@
     content: '•';
     text-align: center;
     opacity: .25;
-    color: #DDDDDD;
+    color: #b8b8b8;
     -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li button:before{
+    position: relative;
 }

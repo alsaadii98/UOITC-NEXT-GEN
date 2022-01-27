@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 const NavBar = () => {
     return (
         <div>
-            <nav className={'flex flex-wrap justify-between items-center py-7 px-14 lg:px-28 shadow-lg px-12'}>
+            <nav className={'w-full flex flex-wrap justify-between items-center py-7 px-16  shadow-lg '}>
                 {/*Logo*/}
                 <div>
                     <span className={'text-red-800 text-2xl font-bold'}>
