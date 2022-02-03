@@ -15,19 +15,19 @@ const TabsBtn = (props) => {
                 className="sticky  top-0 flex items-center justify-between justify-items-center shadow-lg shadow-gray-200  bg-white h-16 lg:w-[25rem] rounded-2xl">
                 <button
                     onClick={() => setToggle(1)}
-                    className={`w-32 ${toggle === 1 ? activeClass : "w-28"} `}
+                    className={`w-32 focus:outline-none ${toggle === 1 ? activeClass : "w-28"} `}
                 >
                     Conference
                 </button>
                 <button
                     onClick={() => setToggle(2)}
-                    className={`w-32 ${toggle === 2 ? activeClass : "w-28"} `}
+                    className={`w-32 focus:outline-none ${toggle === 2 ? activeClass : "w-28"} `}
                 >
                     Seminars
                 </button>
                 <button
                     onClick={() => setToggle(3)}
-                    className={`w-32 ${toggle === 3 ? activeClass : "w-28"} `}
+                    className={`w-32 focus:outline-none ${toggle === 3 ? activeClass : "w-28"} `}
                 >
                     Workshops
                 </button>

@@ -84,7 +84,7 @@ export default class Responsive extends Component {
                     {data.map((item, index) => {
                         return (
                             <div className="flex items-center justify-center space-x-4 mt-10">
-                                <div className="w-72 bg-gray-100 rounded-2xl ">
+                                <div className="w-80 bg-gray-100 rounded-2xl ">
                                     <img
                                         className="w-full h-56 rounded-t-xl"
                                         src={require(`../../assets/img/Img${index + 1}.jpg`)}
@@ -96,9 +96,9 @@ export default class Responsive extends Component {
                                         </h4>
                                         <p className="leading-normal text-gray-700">{item.text}</p>
                                         <div className="flex justify-end ">
-                                            <h1 className="text-blue-500 cursor-pointer">
+                                            <button className="text-blue-500 cursor-pointer">
                                                 Read More
-                                            </h1>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
