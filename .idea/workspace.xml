@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf4c2a3-4b04-4ed5-9412-177bd037d3e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/Conference.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/Seminars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/Tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/TabsBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tab Bar/WorkShops.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel/HeroCarousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/DropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/DropDown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavBarContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Latest Articles/LatestArticles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Latest Articles/LatestArticles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/MobileNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/MobileNav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +94,7 @@
       <workItem from="1643466047244" duration="2009000" />
       <workItem from="1643472209410" duration="2763000" />
       <workItem from="1643542279250" duration="6441000" />
-      <workItem from="1643879750622" duration="1072000" />
+      <workItem from="1643879750622" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="More Dir">
       <created>1642280249950</created>

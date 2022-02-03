@@ -83,8 +83,8 @@ export default class Responsive extends Component {
                 <Slider className={''}  {...settings}>
                     {data.map((item, index) => {
                         return (
-                            <div className="grid lg:grid-cols-3 justify-items-center mt-10">
-                                <div className="mx-2 w-[22rem] mx-28 mb-2 rounded-xl shadow-lg">
+                            <div className="flex items-center justify-center space-x-4 mt-10">
+                                <div className="w-72 bg-gray-100 rounded-2xl ">
                                     <img
                                         className="w-full h-56 rounded-t-xl"
                                         src={require(`../../assets/img/Img${index + 1}.jpg`)}

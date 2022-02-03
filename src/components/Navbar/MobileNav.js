@@ -20,7 +20,7 @@ const MobileNav = (props) => {
 
                 }
                 <div
-                    className={`top-[88px] p-7 right-0 w-[50vw] md:w-[50vw] shadow-lg bg-white border-l-[1px] border-slate-700
+                    className={`z-50 top-[88px] p-7 right-0 w-[50vw] md:w-[50vw] shadow-lg bg-white border-l-[1px] border-slate-700
                         text-white fixed h-full ${show ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-500 `}>
                     <NavBarContent classes={'flex flex-col '}/>
                 </div>
