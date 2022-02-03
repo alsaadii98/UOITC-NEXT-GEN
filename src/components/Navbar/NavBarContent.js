@@ -1,9 +1,9 @@
 import React from 'react';
 import DropDown from './DropDown'
-
+import {NavLink} from "react-router-dom";
 const NavBarContent = (props) => {
     return (
-        <div className={''} >
+        <div className={'relative'} >
             <ul className={'flex lg:flex-row flex-col flex-wrap text-left space-y-7 lg:space-y-0 space-x-0 lg:space-x-7 text-sm  font-light text-sub'}>
                 <li className={'hover:text-red-800 cursor-pointer duration-300 ease-in-out'}>Home</li>
                 <DropDown name={'Colleges'} addLinks={[

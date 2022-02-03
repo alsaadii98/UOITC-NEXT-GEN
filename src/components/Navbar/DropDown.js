@@ -2,6 +2,7 @@ import {Fragment} from 'react'
 import {Menu, Transition} from '@headlessui/react'
 import {ChevronRightIcon} from '@heroicons/react/solid'
 
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -27,7 +28,7 @@ const DropDown = (props) => {
                 leaveTo="transform opacity-0 scale-95"
             >
                 <Menu.Items
-                    className="origin-top-left static lg:absolute left-0 mt-2 w-56 rounded-md lg:shadow-lg lg:bg-white lg:ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    className="origin-top-left static lg:absolute z-50 left-0 mt-2 w-56 rounded-md lg:shadow-lg lg:bg-white lg:ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                         {
                             props.addLinks.map((item) => {
@@ -35,7 +36,7 @@ const DropDown = (props) => {
                                     <Menu.Item>
                                         {({active}) => (
                                             <a
-                                                href={item.path}
+                                                href={item.path} target="_blank"
                                                 className={classNames(
                                                     active ? 'bg-red-800 transition-all duration-500 text-white' : 'text-sub',
                                                     'block px-4 py-4'

@@ -59,7 +59,7 @@ export default class SimpleSlider extends Component {
                       }>
                       {item.text}
                     </p>
-                    <button
+                    <button key={index}
                       className={
                         "bg-red-800 text-sm md:text-base font-bold py-4 px-7 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none"
                       }>
@@ -67,10 +67,10 @@ export default class SimpleSlider extends Component {
                     </button>
                   </div>
                   {/* The Image */}
-                  <div className="lg:w-1/2 mb-4 md:mb-10 lg:mb-0 overflow-hidden rounded-bl-[5rem] sm:rounded-bl-[8rem] md:rounded-bl-[10rem] 2xl:rounded-bl-[15rem]">
+                  <div className="lg:w-1/2  mb-4 md:mb-10 lg:mb-0 overflow-hidden rounded-bl-[5rem] sm:rounded-bl-[8rem] md:rounded-bl-[10rem] 2xl:rounded-bl-[15rem]">
                     {/* IMG */}
                     <div className="max-w-[100rem] max-h-52 overflow-hidden lg:max-h-[36rem] bg-cover bg-center">
-                      <img className="w-full h-screen"
+                      <img className="w-full h-[50rem] "
                         src={require(`../../assets/img/Img${index + 1}.jpg`)}
                       />
                     </div>
