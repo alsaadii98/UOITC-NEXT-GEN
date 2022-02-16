@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar/Navbar";
-import HeroCarousel from "../components/Carousel/HeroCarousel";
-import LatestArticles from "../components/Latest Articles/LatestArticles";
+
+import MainSwiper from "../components/Carousel/MainSwiper";
+
 import TabsBtn from "../components/Tab Bar/TabsBtn";
 import { AboutUS } from "../components/About US/AboutUS";
 import { OurMessage } from "../components/OurMessage/OurMessage";
@@ -11,14 +12,14 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <HeroCarousel />
-      <LatestArticles />
+      <MainSwiper />
+
       <TabsBtn />
-      <AboutUS />
+      {/* <AboutUS />
       <OurMessage />
       <OurStaff />
       <CareerDev />
-      <ContactUs/>
+      <ContactUs /> */}
     </div>
   );
 }

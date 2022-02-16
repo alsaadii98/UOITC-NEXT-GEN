@@ -7,3 +7,6 @@ const Dots = (props) => {
 };
 
 export default Dots;
+
+
+
