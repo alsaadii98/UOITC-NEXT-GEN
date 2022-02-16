@@ -7,6 +7,7 @@ import { OurMessage } from "../components/OurMessage/OurMessage";
 import { OurStaff } from "../components/OurStaff/OurStaff";
 import { CareerDev } from "../components/CareerDeVCenter/CareerDev";
 import { ContactUs } from "../components/ContactUs/ContactUs";
+import DownloadApp from '../components/DownLoadApp/DownloadApp'
 import Footer from '../components/Footer/Footer'
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <OurStaff />
       <CareerDev />
       <ContactUs />
+      <DownloadApp/>
       <Footer/>
     </div>
   );
