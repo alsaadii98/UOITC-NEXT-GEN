@@ -14,31 +14,31 @@ const Footer = () => {
         {/* Related Sites  */}
         <div className="space-y-4">
           <h1 className="text-xl text-red-800 font-semibold">Related Sites</h1>
-          <ul className="text-gray-500 space-y-2">
-            <li className="cursor-pointer">
+          <ul className="text-gray-500 space-y-2 ">
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">
               Ministry of Higher Education and Scientific Research
             </li>
-            <li className="cursor-pointer">
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">
               Imam Al-Kadhum University College
             </li>
-            <li className="cursor-pointer">University of Baghdad</li>
-            <li className="cursor-pointer">University of Technology</li>
-            <li className="cursor-pointer">Al-Mansour University College</li>
-            <li className="cursor-pointer">University of Mustansiriyah</li>
-            <li className="cursor-pointer">University of alkafeel</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">University of Baghdad</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">University of Technology</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">Al-Mansour University College</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">University of Mustansiriyah</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">University of alkafeel</li>
           </ul>
         </div>
         {/* ARCHIVES */}
         <div className="space-y-4">
           <h1 className="text-xl text-red-800 font-semibold">ARCHIVES</h1>
           <ul className="text-gray-500 space-y-2">
-            <li className="cursor-pointer">March 2019</li>
-            <li className="cursor-pointer">February 2019</li>
-            <li className="cursor-pointer">January 2019</li>
-            <li className="cursor-pointer">December 2018</li>
-            <li className="cursor-pointer">November 2018</li>
-            <li className="cursor-pointer">October 2018</li>
-            <li className="cursor-pointer">September 2018</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">March 2019</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">February 2019</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">January 2019</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">December 2018</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">November 2018</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">October 2018</li>
+            <li className="cursor-pointer hover:text-red-800 transform-all duration-500 ease-in-out">September 2018</li>
           </ul>
         </div>
         {/* SOCIAL MEDIA */}

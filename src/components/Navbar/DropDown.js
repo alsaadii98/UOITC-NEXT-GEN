@@ -31,9 +31,9 @@ const DropDown = (props) => {
                     className="origin-top-left static lg:absolute z-50 left-0 mt-2 w-56 rounded-md lg:shadow-lg lg:bg-white lg:ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                         {
-                            props.addLinks.map((item) => {
+                            props.addLinks.map((item,index) => {
                                 return (
-                                    <Menu.Item>
+                                    <Menu.Item key={index}>
                                         {({active}) => (
                                             <a
                                                 href={item.path} target="_blank"

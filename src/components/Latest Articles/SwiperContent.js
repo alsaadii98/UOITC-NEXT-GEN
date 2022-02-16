@@ -21,9 +21,9 @@ export const SwiperContent = (props) => {
           <h1 className="text-left text-sm font-semibold">{props.title}</h1>
           <p className="text-left text-sm font-extralight">{props.text}</p>
           {/* Btn */}
-          <div className="absolute bottom-14 right-10 flex items-center justify-end cursor-pointer text-blue-700 space-x-2">
+          <div className="absolute bottom-14 right-32 flex items-center justify-end cursor-pointer text-blue-700 space-x-2 hover:scale-125	 hover:text-blue-500 transform-all duration-500 ease-in-out ">
             <button>Read More</button>
-            <ArrowNarrowRightIcon className="w-5 text-blue-600" />
+            <ArrowNarrowRightIcon className="w-5" />
           </div>
         </div>
       </div>
