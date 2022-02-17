@@ -3,12 +3,12 @@ import Dots from "../Dots";
 import StaffSvg from "./StaffSvg";
 export const OurStaff = () => {
   return (
-    <div className="mt-44 flex lg:flex-row flex-col items-center justify-between ">
+    <div className="mt-20 flex lg:flex-row flex-col lg:items-center justify-between space-y-10 ">
       {/* Text */}
       <div>
         <div className="space-y-4">
-          <div className="ml-28 space-y-4">
-            <h1 className="text-4xl text-red-800 font-semibold">Our Staff</h1>
+          <div className="lg:ml-28 ml-5 space-y-4">
+            <h1 className="text-4xl lg:text-5xl text-red-800 font-semibold">Our Staff</h1>
             <p className="text-gray-600 w-96">
               We have staff members who are responsible for keeping the
               University a well-organised and efficient institution. Responsible
@@ -19,7 +19,7 @@ export const OurStaff = () => {
             </p>
             <button
               className={
-                "bg-red-800 text-sm md:text-base font-bold py-4 px-7 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none"
+                "bg-red-800 text-md font-bold py-5 px-8 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none"
               }
             >
               See More
@@ -29,8 +29,8 @@ export const OurStaff = () => {
         </div>
       </div>
       {/* Image */}
-      <div className="w-1/2 flex items-center justify-center">
-        <StaffSvg className="" />
+      <div className="lg:w-1/2 flex items-center justify-center">
+        <StaffSvg className="w-80 lg:w-[26rem]" />
       </div>
     </div>
   );
