@@ -2,9 +2,9 @@ import React from "react";
 import './styles.css'
 export const SwiperContent = (props) => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-2 justify-center lg:justify-between overflow-hidden">
+    <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
       {/* Text & Btn */}
-      <div className="mt-2 sm:mt-5 lg:mt-0 w-2/3 lg:w-1/2 space-y-4 flex flex-col justify-start items-start">
+      <div className="mt-5 lg:mt-0 w-72 md:w-96 lg:w-1/2 space-y-4 flex flex-col justify-start items-start">
         <h1 className="title-class lg:w-2/3 text-left block font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-red-800">
           {props.title}
         </h1>
@@ -19,18 +19,18 @@ export const SwiperContent = (props) => {
         
       </div>
       {/* Img & Shape */}
-      <div className="lg:w-3/5 2xl:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center lg:ml-10">
         {/* Circle */}
-        <div className="bg-[#DFE9FE] hidden lg:block mt-2 rounded-l-full  lg:w-20 xl:w-24 2xl:w-16 lg:h-32"></div>
+        <div className="bg-[#DFE9FE] hidden lg:block mt-7  rounded-l-full lg:w-16 lg:h-20 xl:w-16 xl:h-28"></div>
         {/* Img */}
-        <div className="w-96 h-72 lg:h-[27.014rem] lg:w-[38.51rem] xl:h-[31.014rem] xl:w-[44.51rem] 2xl:h-[37.014rem] 2xl:w-[54.51rem] bg-center">
+        <div className="w-72 md:w-96 h-44 md:h-56 lg:w-[48.51rem] lg:h-[23.014rem] xl:h-[27.014rem] 2xl:h-[35.014rem] 2xl:w-[54.51rem] bg-center">
           <img
-            className="p-10 sm:p-0 rounded-bl-[8.5rem] lg:rounded-bl-[12.5rem]"
+            className="rounded-bl-[4.5rem] md:rounded-bl-[6.5rem] lg:rounded-bl-[8.5rem] xl:rounded-bl-[12.5rem]"
             src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
           />
         </div>
         {/* Rectangle */}
-        <div className="bg-[#F3FEE2] hidden lg:block absolute lg:bottom-8 lg:right-36 xl:bottom-12 xl:right-48 2xl:bottom-12 2xl:right-96 rounded-br-[5rem] w-36 2xl:w-48 h-20"></div>
+        <div className="bg-[#F3FEE2] hidden lg:block absolute bottom-12 right-36 rounded-br-[5rem] w-36 2xl:w-48 h-16 xl:h-20"></div>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ export default function App() {
       >
         {data.map((item, index) => {
           return (
-            <SwiperSlide className="px-2 py-8 md:px-10 md:py-24 lg:px-16 lg:py-28 xl:px-20 xl:py-32" key={index}>
+            <SwiperSlide className="px-2 py-8 md:px-10 md:py-16 lg:px-16 lg:py-28 xl:px-20 xl:py-32" key={index}>
               <SwiperContent
                 title={item.title}
                 text={item.text}
@@ -68,7 +68,7 @@ export default function App() {
             </SwiperSlide>
           );
         })}
-        <Dots className="absolute bottom-8 lg:bottom-32 xl:bottom-36 w-72 lg:w-80 xl:w-96"/>
+        <Dots className="hidden lg:absolute bottom-32 xl:bottom-36  w-80 xl:w-96"/>
       </Swiper>
     </div>
   );

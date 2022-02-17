@@ -35,8 +35,10 @@
   height: 100%;
   object-fit: cover;
 }
+
 .swiper-pagination-bullet-active {
-  background-color: #A62B2D;
+  background-color: #A62B2D !important;
+  
   
 }
 
