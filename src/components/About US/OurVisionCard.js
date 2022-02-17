@@ -5,8 +5,8 @@ export const OurVisionCard = () => {
     <div className="bg-white h-72 flex flex-col justify-center rounded-2xl py-10 px-4 shadow-lg hover:scale-125 transform-all duration-500 ease-in-out">
       <div className="flex flex-col items-center justify-center text-center space-y-2">
         {/* Icon */}
-        <div className="bg-red-300 w-16 p-2 rounded-2xl items-center">
-          <LightBulbIcon className="stroke-2 stroke-white" />
+        <div className="bg-red-300  p-4 rounded-2xl items-center">
+          <LightBulbIcon className="w-10 h-10  stroke-white" />
         </div>
         <div className="text-center mx-3 space-y-2">
           <h1 className="text-red-800 text-lg font-semibold">Our Vision</h1>

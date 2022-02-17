@@ -1,12 +1,12 @@
 import React from "react";
-import { HeartIcon } from "@heroicons/react/outline";
+import  {IoRocketOutline}  from "react-icons/io5";
 export const OurMissionCard = () => {
   return (
     <div className="bg-white items-center flex flex-col justify-center h-72 rounded-2xl py-10 px-4 shadow-lg hover:scale-125 transform-all duration-500 ease-in-out">
       <div className="flex flex-col items-center justify-center text-center space-y-2">
         {/* Icon */}
-        <div className="bg-blue-300 w-16 p-2 rounded-2xl items-center">
-          <HeartIcon className="stroke-white" />
+        <div className="bg-blue-300  p-4 rounded-2xl items-center">
+          <IoRocketOutline className=" w-10 h-10 stroke-white" />
         </div>
         <div className="text-center mx-3 space-y-2">
           <h1 className="text-blue-500 text-lg font-semibold">Our Mission</h1>
