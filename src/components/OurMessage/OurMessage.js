@@ -3,7 +3,7 @@ import Dots from "../Dots";
 import DrAbbas from "../../assets/img/DrAbbas.jpg";
 export const OurMessage = () => {
   return (
-    <div className="mt-32 flex lg:flex-row flex-col lg:items-center justify-between space-y-7 lg:space-y-0 ">
+    <div className="mt-44 lg:mt-32 flex lg:flex-row flex-col lg:items-center justify-between space-y-7 lg:space-y-0 ">
       {/* Text */}
       <div>
         <div className="space-y-4">
@@ -20,8 +20,8 @@ export const OurMessage = () => {
         </div>
       </div>
       {/* Image */}
-        <div className=" flex items-center m-5 md:m-10 lg:m-0 rounded-bl-[8.5rem] md:rounded-bl-[12.5rem] overflow-hidden h-80 md:h-[26rem] lg:h-[28rem] lg:w-1/2">
-            <img className="w-full p-2 h-[500px]" src={DrAbbas} alt="DrAbbas" />
+        <div className=" flex items-center sm:m-5 md:m-10 lg:m-0 rounded-bl-[8.5rem] md:rounded-bl-[12.5rem] overflow-hidden h-80 md:h-[26rem] lg:h-[28rem] lg:w-1/2">
+            <img className="w-full p-2 lg:p-0 h-[28.5rem]  xl:h-[32.5rem] 2xl:h-[37.5rem]" src={DrAbbas} alt="DrAbbas" />
         </div>
     </div>
   );

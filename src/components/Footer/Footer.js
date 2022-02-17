@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div className="mt-20 shadow-lg shadow-sub w-full bg-white ">
-      <div className=" pt-20 flex justify-around items-center ">
+      <div className="ml-32 lg:ml-0 space-y-10 lg:space-y-0 pt-20 flex flex-col lg:flex-row justify-center lg:justify-around lg:items-center ">
         {/* Related Sites  */}
         <div className="space-y-4">
           <h1 className="text-xl text-red-800 font-semibold">Related Sites</h1>
