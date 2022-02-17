@@ -1,11 +1,13 @@
-import React from 'react'
-import LatestArticles from './LatestArticles'
+import React from "react";
+import LatestArticles from "./LatestArticles";
+import Dots from "../Dots";
 export const LatestArticlesSwiper = () => {
   return (
-    <div className='ml-24'>
+    <div className=" relative">
+      <div className="mt-20 sm:ml-24">
         {/* Latest Articles  */}
-        <div>
-          <h1 className="text-5xl font-semibold text-red-800">
+        <div className="ml-5 sm:ml-0">
+          <h1 className="text-4xl md:text-5xl font-semibold text-red-800">
             Latest Articles
           </h1>
           <h5 className="text-xl text-gray-800 ">
@@ -13,8 +15,11 @@ export const LatestArticlesSwiper = () => {
           </h5>
         </div>
         <div>
-            <LatestArticles/>
+          <LatestArticles />
         </div>
+        
+      </div>
+      <Dots className="absolute bottom-5 " />
     </div>
-  )
-}
+  );
+};

@@ -33,7 +33,7 @@ function LatestArticles() {
       id: 3,
       date: "22-22-2022",
       title:
-        "The Continuous Education Center concludes the Teaching Methods Course",
+        "The Continuous Education Center concludes the Teaching Methods",
       text: "The Continuous Education Center at the University of Information Technology and Communications concluded the Teaching Methods Course, which was held for the",
       img: "../assets/img/Img3.jpg",
     },
@@ -53,6 +53,7 @@ function LatestArticles() {
       text: "Students of the faculties of Business Informatics, Engineering, and Biomedical Informatics at the University took their attendance exams for the first semester ",
       img: "../assets/img/Img5.jpg",
     },
+    
   ];
   return (
     <>
@@ -62,21 +63,25 @@ function LatestArticles() {
           clickable: true,
         }}
         breakpoints={{
-          920: {
+          375: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
-          1320: {
+          768: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
-          1720: {
+          1060: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 10,
           },
-          1920: {
+          1396: {
             slidesPerView: 4,
-            spaceBetween: 0,
+            spaceBetween: 10,
+          },
+          1725: {
+            slidesPerView: 5,
+            spaceBetween: 10,
           },
         }}
         freeMode={true}
@@ -98,7 +103,7 @@ function LatestArticles() {
                 }
                 text={
                   item.text.length > 150
-                    ? `${item.text.substring(0, 100)} ...`
+                    ? `${item.text.substring(0, 80)} ...`
                     : item.text
                 }
                 date={item.date}
