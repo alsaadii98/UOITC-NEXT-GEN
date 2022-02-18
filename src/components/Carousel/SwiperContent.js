@@ -1,5 +1,6 @@
 import React from "react";
-import './styles.css'
+import { Link } from "react-router-dom";
+import "./styles.css";
 export const SwiperContent = (props) => {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
@@ -8,15 +9,18 @@ export const SwiperContent = (props) => {
         <h1 className="title-class lg:w-2/3 text-left block font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-red-800">
           {props.title}
         </h1>
-        <p className="w-4/5 block text-main text-sm xl:text-md text-left">{props.text}</p>
-        <button
-          className={
-            "bg-red-800 text-sm md:text-base font-semibold py-4 px-5 xl:px-7 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none"
-          }
-        >
-          Read More
-        </button>
-        
+        <p className="w-4/5 block text-main text-sm xl:text-md text-left">
+          {props.text}
+        </p>
+        <Link to={`/articles/${props.id}`}>
+          <button
+            className={
+              "bg-red-800 text-sm md:text-base font-semibold py-4 px-5 xl:px-7 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none"
+            }
+          >
+            Read More
+          </button>
+        </Link>
       </div>
       {/* Img & Shape */}
       <div className="lg:w-1/2 flex justify-center lg:ml-10">
