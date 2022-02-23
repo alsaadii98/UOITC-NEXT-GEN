@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import DropDown from './DropDown'
 const NavBarContent = (props) => {
+    
     return (
         <div className={'relative'} >
             <ul className={'flex lg:flex-row flex-col flex-wrap text-left space-y-7 lg:space-y-0 space-x-0 lg:space-x-7 text-sm  font-light text-sub'}>

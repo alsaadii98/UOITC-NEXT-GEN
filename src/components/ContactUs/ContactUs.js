@@ -28,8 +28,8 @@ export const ContactUs = () => {
         </div>
       </div>
       {/* Map */}
-      <div className="lg:w-1/2 w-full p-10">
-        <Loc className="w-full p-2 h-[500px] rounded-tl-[200px] overflow-hidden" />
+      <div className="lg:w-1/2 w-full ">
+        <Loc className="w-full p-0 lg:p-2 h-[500px] lg:rounded-tl-[200px] overflow-hidden" />
       </div>
     </div>
   );

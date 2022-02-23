@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 export const SwiperContent = (props) => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
+    <div className="max-w-7xl 2xl:max-w-[120rem] flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
       {/* Text & Btn */}
       <div className="mt-5 lg:mt-0 w-72 md:w-96 lg:w-1/2 space-y-4 flex flex-col justify-start items-start">
         <h1 className="title-class lg:w-2/3 text-left block font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-red-800">
@@ -24,19 +24,26 @@ export const SwiperContent = (props) => {
       </div>
       {/* Img & Shape */}
       <div className="lg:w-1/2 flex justify-center lg:ml-10">
-        {/* Circle */}
-        <div className="bg-[#DFE9FE] hidden lg:block mt-7  rounded-l-full lg:w-16 lg:h-20 xl:w-16 xl:h-28"></div>
-        {/* Img */}
-        <div className="w-72 md:w-96 h-44 md:h-56 lg:w-[48.51rem] lg:h-[23.014rem] xl:h-[27.014rem] 2xl:h-[35.014rem] 2xl:w-[54.51rem] bg-center">
-          <img
-            className="rounded-bl-[4.5rem] md:rounded-bl-[6.5rem] lg:rounded-bl-[8.5rem] xl:rounded-bl-[12.5rem]"
-            src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
-          />
+        <div className="grid gris-cols-2 grid-rows-1 relative overflow-visible">
+          <div className="flex">
+            {/* Circle */}
+            <div className="bg-[#DFE9FE] hidden lg:block mt-7  rounded-l-full lg:w-10 lg:h-20 xl:w-16 xl:h-28"></div>
+            {/* Img */}
+            <div className="bg-center object-center w-72 md:w-96 h-44 md:h-56 lg:w-[48.51rem] lg:h-[23.014rem] xl:h-[27.014rem] 2xl:h-[35.014rem] 2xl:w-[64.51rem]">
+              <img
+                className="rounded-bl-[4.5rem] md:rounded-bl-[6.5rem] lg:rounded-bl-[8.5rem] xl:rounded-bl-[12.5rem]"
+                src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
+              />
+            </div>
+          </div>
+          {/* Rectangle */}
+          <div className="flex items-end justify-end 2xl:mr-52 xl:mr-52 lg:mr-60 ">
+            <div className="bg-[#F3FEE2] hidden lg:block rounded-br-[5rem] w-36 2xl:w-48 h-16 xl:h-16"></div>
+          </div>
         </div>
-        {/* Rectangle */}
-        <div className="bg-[#F3FEE2] hidden lg:block absolute bottom-12 right-36 rounded-br-[5rem] w-36 2xl:w-48 h-16 xl:h-20"></div>
       </div>
     </div>
   );
 };
 export default SwiperContent;
+

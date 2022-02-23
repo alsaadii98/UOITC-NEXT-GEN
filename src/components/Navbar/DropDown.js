@@ -3,18 +3,20 @@ import {Menu, Transition} from '@headlessui/react'
 import {ChevronRightIcon} from '@heroicons/react/solid'
 
 
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 const DropDown = (props) => {
+
     return (
-        <Menu as="div" className="relative inline-block">
+        <Menu as="div" className="relative inline-block" >
             <div>
                 <Menu.Button
                     className="cursor-pointer inline-flex items-center text-sm font-light text-sub hover:text-red-800 focus:outline-none ">
                     {props.name}
-                    <ChevronRightIcon className={'-mr-1 ml-2 h-5 w-5 text-red-800 '} aria-hidden="true"/>
+                    <ChevronRightIcon  className={'-mr-1 ml-2 h-5 w-5 text-red-800 transition-all duration-500  ease-in-out rotate-90 '} aria-hidden="true"/>
                 </Menu.Button>
             </div>
 

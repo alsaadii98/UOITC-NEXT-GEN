@@ -29,8 +29,8 @@ export const OurStaff = () => {
         </div>
       </div>
       {/* Image */}
-      <div className="lg:w-1/2 flex items-center justify-center">
-        <StaffSvg className="w-80 lg:w-[26rem]" />
+      <div className="lg:w-1/2 xl:max-w-6xl flex items-center justify-center">
+        <StaffSvg className="w-80 lg:w-[26rem] xl:w-[30rem]" />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export const AboutUS = () => {
         <Dots className="hidden lg:block w-96" />
       </div>
       {/* Images */}
-      <div className="lg:w-1/2 w-full p-10 lg:p-0 lg:h-[28rem] lg:rounded-tl-[200px] bg-gray-50 md:relative ">
+      <div className="lg:w-1/2 xl:max-w-6xl object-fill bg-center w-full p-10 lg:p-0 lg:h-[28rem] xl:h-[32rem] lg:rounded-tl-[200px] bg-gray-50 md:relative ">
         <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center lg:space-x-4 lg:absolute lg:inset-x-0 lg:bottom-1  lg:-rotate-12">
           <div className="space-y-4">
             <OurVisionCard />
