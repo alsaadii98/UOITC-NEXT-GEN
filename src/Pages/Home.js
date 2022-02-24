@@ -11,7 +11,7 @@ import DownloadApp from '../components/DownLoadApp/DownloadApp'
 import Footer from '../components/Footer/Footer'
 function Home() {
   return (
-    <div className="space-y-8 lg:space-y-20">
+    <div className="space-y-8">
       <Navbar />
       <MainSwiper />
       <LatestArticlesSwiper/>

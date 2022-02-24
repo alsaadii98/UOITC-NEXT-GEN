@@ -1,18 +1,19 @@
 import React from "react";
 import LatestArticles from "./LatestArticles";
 import { Link } from "react-router-dom";
-import Dots from "../Dots";
+
 export const LatestArticlesSwiper = () => {
   return (
-    <div className=" relative">
-      <div className="mt-20 sm:ml-24">
+    <div className="mx-auto max-w-7xl lg:max-w-[130rem]">
+      <div className="mt-20 mb-20 sm:ml-24">
         {/* Latest Articles  */}
         <div className="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 justify-between ">
-          <div className="ml-5 sm:ml-0">
+          <div className="">
+          {/* ml-5 sm:ml-0 */}
             <h1 className="text-4xl md:text-5xl font-semibold text-red-800">
               Latest Articles
             </h1>
-            <h5 className="text-xl text-gray-800 ">
+            <h5 className="mt-2 text-xl text-gray-800">
               Our latest articles and news
             </h5>
           </div>
@@ -25,7 +26,7 @@ export const LatestArticlesSwiper = () => {
           <LatestArticles />
         </div>
       </div>
-      <Dots className="absolute bottom-5 " />
+      
     </div>
   );
 };

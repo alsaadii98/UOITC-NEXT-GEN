@@ -1,5 +1,5 @@
 import React from "react";
-import Dots from "../Dots";
+
 import DrAbbas from "../../assets/img/DrAbbas.jpg";
 export const OurMessage = () => {
   return (
@@ -16,7 +16,7 @@ export const OurMessage = () => {
               fast transformation in ICT.
             </p>
           </div>
-          <Dots className="w-96" />
+          
         </div>
       </div>
       {/* Image */}
