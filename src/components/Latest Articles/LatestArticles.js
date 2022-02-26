@@ -104,12 +104,12 @@ function LatestArticles() {
                 <SwiperSlide className="relative mt-7 mb-20 " key={index}>
                   <SwiperContent
                     title={
-                      item.title.length > 80
+                      item.title.length > 50
                         ? `${item.title.substring(0, 50)} ...`
                         : item.title
                     }
                     text={
-                      item.content.length > 150
+                      item.content.length > 80
                         ? `${item.content.substring(0, 80)} ...`
                         : item.content
                     }

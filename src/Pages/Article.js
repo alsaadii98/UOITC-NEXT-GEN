@@ -31,11 +31,4 @@ function Article() {
   );
 }
 export default Article;
-{
-  /* <ArticleCom
-                title={dataIn.title}
-                text={dataIn.content}
-                date={dataIn.published_at}
-                image={dataIn.images && dataIn.images[0]}
-              /> */
-}
+

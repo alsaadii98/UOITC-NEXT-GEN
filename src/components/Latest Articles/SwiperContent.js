@@ -7,7 +7,7 @@ export const SwiperContent = (props) => {
   return (
     <div>
       {/* Card */}
-      <div className=" bg-white shadow-lg rounded-3xl overflow-hidden  w-80 h-[420px]">
+      <div className=" relative bg-white shadow-lg rounded-3xl overflow-hidden  w-80 h-[420px]">
         {/* Img */}
         <div className="h-48 w-80 overflow-hidden">
           <img
@@ -26,7 +26,7 @@ export const SwiperContent = (props) => {
           </p>
           {/* Btn */}
           <Link to={`/articles/${props.id}`}>
-            <div className="text-md text-right flex relative -bottom-5 right-0 items-center justify-end cursor-pointer text-blue-700 space-x-2 hover:scale-105	 hover:text-blue-500 transform-all duration-500 ease-in-out ">
+            <div className="text-md text-right flex absolute bottom-5 right-4 items-center justify-end cursor-pointer text-blue-700 space-x-2 hover:scale-105	 hover:text-blue-500 transform-all duration-500 ease-in-out ">
               <button>Read More</button>
               <ArrowNarrowRightIcon className="w-5" />
             </div>
