@@ -3,6 +3,7 @@ import "./styles.css";
 import { Link } from "react-router-dom";
 import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
 export const SwiperContent = (props) => {
+  const imageCont = String(`https://mohammedhilal.pythonanywhere.com/`+props.image)
   return (
     <div>
       {/* Card */}
@@ -10,7 +11,7 @@ export const SwiperContent = (props) => {
         {/* Img */}
         <div className="h-48 w-80 overflow-hidden">
           <img
-            src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
+            src={imageCont}
             alt=""
           />
         </div>

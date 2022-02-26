@@ -17,7 +17,7 @@ import { FreeMode } from "swiper";
 
 function LatestArticles() {
   // Fetching the data
-  const { dataIn, loading, error } = useAxios("http://localhost:8000/articles");
+  const { dataIn, loading, error } = useAxios("http://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni");
   const i = 5;
   return (
     <div>
@@ -109,13 +109,14 @@ function LatestArticles() {
                         : item.title
                     }
                     text={
-                      item.text.length > 150
-                        ? `${item.text.substring(0, 80)} ...`
-                        : item.text
+                      item.content.length > 150
+                        ? `${item.content.substring(0, 80)} ...`
+                        : item.content
                     }
-                    date={item.date}
+                    date={item.published_at}
                     index={index}
                     id={item.id}
+                    image={item.images[0]}
                   />
                 </SwiperSlide>
               );

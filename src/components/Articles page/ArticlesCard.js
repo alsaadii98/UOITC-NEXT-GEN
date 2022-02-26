@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
 const ArticlesCard = (props) => {
+  const imageCont = String(`https://mohammedhilal.pythonanywhere.com/`+props.image)
   return (
     <div>
       {/* Card */}
@@ -9,7 +10,7 @@ const ArticlesCard = (props) => {
         {/* Img */}
         <div className="h-48 w-80 overflow-hidden">
           <img
-            src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
+            src={imageCont}
             alt=""
           />
         </div>

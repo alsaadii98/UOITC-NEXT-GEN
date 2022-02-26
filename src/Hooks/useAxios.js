@@ -6,20 +6,29 @@ const useAxios = (url) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(true);
   useEffect(() => {
+    const abortCont = new AbortController();
     setLoading(true);
-    setTimeout(() => {
-      axios
-        .get(url)
-        .then((res) => {
-          setDataIn(res.data);
-        })
-        .catch((err) => {
+    axios
+      .get(url, { signal: abortCont.signal })
+      .then((res) => {
+        console.log(res.data);
+
+        // console.log(typeof res.data[0].images[0]);
+        setDataIn(res.data);
+      })
+      .catch((err) => {
+        if (err.name === "AbortError") {
+          console.log("Fetch abort");
+        } else {
           setError("Can't resolve this data");
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    },10000);
+        }
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+    return () => {
+      abortCont.abort();
+    };
   }, [url]);
   return { dataIn, loading, error };
 };

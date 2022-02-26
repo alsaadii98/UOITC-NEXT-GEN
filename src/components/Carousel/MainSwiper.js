@@ -18,7 +18,7 @@ import { EffectFade, Autoplay, Pagination } from "swiper";
 
 export default function App() {
   // Fetching the data
-  const { dataIn, loading, error } = useAxios("http://localhost:8000/articles");
+  const { dataIn, loading, error } = useAxios("http://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni");
   return (
     <div>
       {loading && (
@@ -56,9 +56,14 @@ export default function App() {
                 >
                   <SwiperContent
                     title={item.title}
-                    text={item.text}
+                    text={
+                      item.content.length > 150
+                        ? `${item.content.substring(0, 300)} ...`
+                        : item.content
+                    }
                     index={index}
                     id={item.id}
+                    image={item.images[0]}
                   />
                 </SwiperSlide>
               );

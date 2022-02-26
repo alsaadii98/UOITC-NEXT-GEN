@@ -4,23 +4,38 @@ import Footer from "../components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import ArticleCom from "../components/Article page/ArticleCom";
 import useAxios from "../Hooks/useAxios";
+import ArticlePlaceHolder from "../components/SkeletonPlaceHolder/ArticlePlaceHolder/ArticlePlaceHolder";
 
 function Article() {
   const { id } = useParams();
   const { dataIn, loading, error } = useAxios(
-    "http://localhost:8000/articles/" + id
+    "http://mohammedhilal.pythonanywhere.com/api/articles/" + id
   );
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       <div>
-        {loading && <div>Loading ...</div>}
+        {loading && (<ArticlePlaceHolder />)}
         {error && <div>{error}</div>}
-        {dataIn && <ArticleCom id={id} text={dataIn.text} title={dataIn.title} date={dataIn.date} />}
+        {dataIn && (
+          <ArticleCom
+            title={dataIn.title}
+            text={dataIn.content}
+            date={dataIn.published_at}
+            image={dataIn.images && dataIn.images[0]}
+          />
+        )}
       </div>
-
       <Footer />
     </div>
   );
 }
 export default Article;
+{
+  /* <ArticleCom
+                title={dataIn.title}
+                text={dataIn.content}
+                date={dataIn.published_at}
+                image={dataIn.images && dataIn.images[0]}
+              /> */
+}

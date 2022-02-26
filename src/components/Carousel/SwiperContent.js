@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 export const SwiperContent = (props) => {
+  const imageCont = String(`https://mohammedhilal.pythonanywhere.com/`+props.image)
   return (
     <div className="max-w-7xl 2xl:max-w-[120rem] flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
       {/* Text & Btn */}
@@ -27,12 +28,13 @@ export const SwiperContent = (props) => {
         <div className="grid gris-cols-2 grid-rows-1 relative overflow-visible">
           <div className="flex">
             {/* Circle */}
+            {/* props.images */}
             <div className="bg-[#DFE9FE] hidden lg:block mt-7  rounded-l-full lg:w-10 lg:h-20 xl:w-16 xl:h-28"></div>
             {/* Img */}
             <div className="bg-center object-center w-72 md:w-96 h-44 md:h-56 lg:w-[48.51rem] lg:h-[23.014rem] xl:h-[27.014rem] 2xl:h-[35.014rem] 2xl:w-[64.51rem]">
               <img
                 className="rounded-bl-[4.5rem] md:rounded-bl-[6.5rem] lg:rounded-bl-[8.5rem] xl:rounded-bl-[12.5rem]"
-                src={require(`../../assets/img/Img${props.index + 1}.jpg`)}
+                src={imageCont}
               />
             </div>
           </div>
