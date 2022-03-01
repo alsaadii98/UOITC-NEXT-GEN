@@ -21,7 +21,7 @@ export const OurMessage = () => {
         </div>
       </div>
       {/* Image */}
-        <div className="lg:w-1/2 xl:max-w-6xl bg-center object-fill flex items-center   md:rounded-bl-[12.5rem] overflow-hidden h-80 md:h-[26rem] lg:h-[32rem]">
+        <div className="lg:w-1/2 xl:max-w-6xl bg-center object-fill flex items-center   lg:rounded-bl-[12.5rem] overflow-hidden h-80 md:h-[26rem] lg:h-[32rem]">
             <img className="w-full h-[28.5rem]  xl:h-[32.5rem] 2xl:h-[37.5rem]" src={DrAbbas} alt="DrAbbas" />
         </div>
     </div>

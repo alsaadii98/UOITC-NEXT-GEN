@@ -51,7 +51,7 @@ export default function App() {
             {dataIn.map((item, index) => {
               return (
                 <SwiperSlide
-                  className="px-2 py-8 md:px-10 md:py-16 lg:px-12 lg:py-20 xl:px-14 xl:py-24"
+                  className="px-2 pt-8 pb-2 md:pb-4 lg:pb-5 xl:pb-7  md:px-10 md:pt-16 lg:px-12 lg:pt-20 xl:px-14 xl:pt-24"
                   key={index}
                 >
                   <SwiperContent

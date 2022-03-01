@@ -11,7 +11,7 @@ const ArticlesCom = () => {
   const [search, setSearch] = useState("");
   return (
     <div>
-      <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0  justify-end mt-10 lg:mt-20 mx-10 lg:mr-72">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0  justify-around lg:space-x-48 mt-10 lg:mt-20 mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl xl:max-w-[110rem] ">
         {/* BackBtn */}
         <BackBtn />
         {/* Search bar */}
