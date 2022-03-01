@@ -68,7 +68,7 @@ function LatestArticles() {
       {dataIn && (
         <div>
           <Swiper
-            spaceBetween={30}
+            spaceBetween={20}
             pagination={{
               clickable: true,
             }}
@@ -101,7 +101,7 @@ function LatestArticles() {
             {dataIn.map((item, index) => {
               // px-8 py-5
               return (
-                <SwiperSlide className="relative mt-7 mb-20 " key={index}>
+                <SwiperSlide className="relative mt-7 mb-10 lg:mb-20 " key={index}>
                   <SwiperContent
                     title={
                       item.title.length > 50

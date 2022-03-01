@@ -18,15 +18,15 @@ export const Conference = () => {
             </div>
             {/* Right Side */}
             <div className="lg:w-3/5 w-auto lg:p-4 p-7 space-y-2">
-                <h1 className="text-sm ">
+                <h1 className="text-sm text-gray-800">
                     5th International Conference on New Trends in Information and
                     Communications Technology Applications NTICT'2021
                 </h1>
                 {/* Content */}
                 <div>
                     <div className="py-1 lg:py-0 flex items-center space-x-2">
-                        <CalendarIcon className="text-gray-600 md:w-4 w-3 md:h-4 h-3 font-light"/>
-                        <h1 className="text-gray-600 text-sm md:text-lg font-light">
+                        <CalendarIcon className="text-main md:w-4 w-3 md:h-4 h-3 font-light"/>
+                        <h1 className="text-main text-sm md:text-lg font-light">
                             Form :
                         </h1>
                         <h1 className="text-red-800 text-sm md:text-lg font-light">
@@ -34,8 +34,8 @@ export const Conference = () => {
                         </h1>
                     </div>
                     <div className="py-1 lg:py-0 flex items-center space-x-2">
-                        <CalendarIcon className="text-gray-600  md:w-4 w-3 md:h-4 h-3 font-light"/>
-                        <h1 className="text-gray-600 text-sm md:text-lg font-light">
+                        <CalendarIcon className="text-main  md:w-4 w-3 md:h-4 h-3 font-light"/>
+                        <h1 className="text-main text-sm md:text-lg font-light">
                             To :
                         </h1>
                         <h1 className="text-red-800 text-sm md:text-lg font-light">
@@ -43,8 +43,8 @@ export const Conference = () => {
                         </h1>
                     </div>
                     <div className="py-1 lg:py-0 flex items-center space-x-2">
-                        <AtSymbolIcon className="text-gray-600 md:w-4 w-3 md:h-4 h-3 font-light"/>
-                        <h1 className="text-gray-600 text-sm md:text-lg font-light">
+                        <AtSymbolIcon className="text-main md:w-4 w-3 md:h-4 h-3 font-light"/>
+                        <h1 className="text-main text-sm md:text-lg font-light">
                             Email :
                         </h1>
                         <h1 className="text-red-800 text-sm md:text-lg font-light">

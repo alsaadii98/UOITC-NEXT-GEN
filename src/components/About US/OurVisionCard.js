@@ -10,7 +10,7 @@ export const OurVisionCard = () => {
         </div>
         <div className="text-center mx-3 space-y-2">
           <h1 className="text-red-800 text-lg font-semibold">Our Vision</h1>
-          <p className="text-gray-300  font-light text-[12px] w-48 text-center">
+          <p className="text-main  font-light text-[12px] w-48 text-center">
             leading gate in the region for the technology of information and
             communications serve the community through meeting the needs of the
             labor market.

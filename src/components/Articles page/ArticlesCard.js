@@ -15,12 +15,12 @@ const ArticlesCard = (props) => {
           />
         </div>
         {/* Text & Btn */}
-        <div className="mt-4 px-6 py-2">
+        <div className="mt-2 px-6 py-2">
           <div className="my-2 text-right">
-            <h2 className="text-gray-400 text-sm">{props.date}</h2>
+            <h2 className="text-sub text-sm">{props.date}</h2>
           </div>
-          <h1 className="text-left text-sm font-semibold">{props.title}</h1>
-          <p className=" overflow-hidden text-left text-sm font-extralight">
+          <h1 className="text-main text-left text-sm font-semibold">{props.title}</h1>
+          <p className="text-main  overflow-hidden text-left text-sm font-extralight">
             {props.text}
           </p>
           {/* Btn */}

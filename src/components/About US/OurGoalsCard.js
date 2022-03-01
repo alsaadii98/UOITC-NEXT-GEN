@@ -10,7 +10,7 @@ export const OurGoalsCard = () => {
         </div>
         <div className="text-center mx-3 space-y-2">
           <h1 className="text-green-500 md:text-lg font-semibold">Our Goals</h1>
-          <p className="text-gray-300  font-light text-xs w-48 text-center">
+          <p className="text-main  font-light text-xs w-48 text-center">
             High quality educational programs. Continuous development of
             curriculum and study planning. Preparing the graduate to work in the
             national & international market

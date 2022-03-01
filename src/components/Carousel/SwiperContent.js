@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Shape from "../Shape";
 import "./styles.css";
 export const SwiperContent = (props) => {
-  const imageCont = String(`https://mohammedhilal.pythonanywhere.com/`+props.image)
+  const imageCont = String(
+    `https://mohammedhilal.pythonanywhere.com/` + props.image
+  );
   return (
-    <div className="max-w-7xl 2xl:max-w-[120rem] flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
+    <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-4 justify-center  overflow-hidden">
       {/* Text & Btn */}
       <div className="mt-5 lg:mt-0 w-72 md:w-96 lg:w-1/2 space-y-4 flex flex-col justify-start items-start">
         <h1 className="title-class lg:w-2/3 text-left block font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-red-800">
@@ -22,6 +25,7 @@ export const SwiperContent = (props) => {
             Read More
           </button>
         </Link>
+        <Shape />
       </div>
       {/* Img & Shape */}
       <div className="lg:w-1/2 flex justify-center lg:ml-10">
@@ -48,4 +52,3 @@ export const SwiperContent = (props) => {
   );
 };
 export default SwiperContent;
-

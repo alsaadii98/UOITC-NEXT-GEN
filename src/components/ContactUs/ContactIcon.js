@@ -4,9 +4,9 @@ export const ContactIcon = (props) => {
   return (
     <div className="flex items-center justify-start space-x-4">
       <div>
-        <AtSymbolIcon className="w-14 p-2 bg-red-400 text-white rounded-xl" />
+        <AtSymbolIcon className="w-14 p-2 bg-red-300 text-red-800 rounded-xl" />
       </div>
-      <h1 className="text-xl text-gray-600 ">{props.text}</h1>
+      <h1 className="text-xl text-main ">{props.text}</h1>
     </div>
   );
 };
