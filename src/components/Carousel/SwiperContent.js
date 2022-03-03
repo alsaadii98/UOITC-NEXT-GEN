@@ -7,7 +7,7 @@ export const SwiperContent = (props) => {
     `https://mohammedhilal.pythonanywhere.com/` + props.image
   );
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:space-x-4 lg:justify-center  overflow-hidden">
+    <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-4 lg:justify-center  overflow-hidden">
       {/* Text & Btn */}
       <div className="mt-5 lg:mt-0 w-72 md:w-96 lg:w-1/2 space-y-4 flex flex-col justify-start items-start">
         <h1 className="title-class lg:w-2/3 text-left block font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-red-800">
@@ -33,7 +33,7 @@ export const SwiperContent = (props) => {
           <div className="flex">
             {/* Circle */}
             {/* props.images */}
-            <div className="bg-[#DFE9FE] hidden lg:block mt-7  rounded-l-full lg:w-10 lg:h-20 xl:w-16 xl:h-28"></div>
+            <div className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 hidden lg:block mt-7  rounded-l-full lg:w-10 lg:h-20 xl:w-16 xl:h-28"></div>
             {/* Img */}
             <div className="bg-center object-center w-72 md:w-96 h-44 md:h-56 lg:w-[48.51rem] lg:h-[23.014rem] xl:h-[27.014rem] 2xl:h-[35.014rem] 2xl:w-[64.51rem]">
               <img alt={props.title}
@@ -44,7 +44,7 @@ export const SwiperContent = (props) => {
           </div>
           {/* Rectangle */}
           <div className="flex items-end justify-end 2xl:mr-52 xl:mr-52 lg:mr-60 ">
-            <div className="bg-[#F3FEE2] hidden lg:block rounded-br-[5rem] w-36 2xl:w-48 h-16 xl:h-16"></div>
+            <div className="bg-gradient-to-r from-green-200 via-green-400 to-green-500 hidden lg:block rounded-br-[5rem] w-36 2xl:w-48 h-16 xl:h-16"></div>
           </div>
         </div>
       </div>

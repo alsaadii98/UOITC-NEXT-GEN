@@ -37,7 +37,7 @@ const ArticlesCom = () => {
           </div>
         </div>
       )}
-      {error && error}
+      {error && <div>{error}</div>}
       {dataIn && (
         <div className=" mt-8 lg:mt-14 flex items-center justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -45,15 +45,13 @@ const ArticlesCom = () => {
               .filter((item) => {
                 if (search == "") {
                   return item;
-                } else if (
-                  item.title.toLowerCase().includes(search.toLowerCase())
-                ) {
+                } else if (item.title.toLowerCase().includes(search.toLowerCase())) {
                   return item;
                 }
               })
               .map((item, index) => {
                 return (
-                  <div className="flex item-center" key={index}>
+                  <div  className="flex item-center" key={index}>
                     <ArticlesCard
                       title={
                         item.title.length > 50

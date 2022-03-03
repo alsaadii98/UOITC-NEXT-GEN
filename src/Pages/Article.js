@@ -4,6 +4,7 @@ import ArticleCom from "../components/Article page/ArticleCom";
 import useAxios from "../Hooks/useAxios";
 import ArticlePlaceHolder from "../components/SkeletonPlaceHolder/ArticlePlaceHolder/ArticlePlaceHolder";
 import BackBtn from "../components/BackBtn";
+import Error from "../components/Error";
 function Article() {
   const { id } = useParams();
   const { dataIn, loading, error } = useAxios(
@@ -17,16 +18,9 @@ function Article() {
         </div>
       </div>
 
-      {loading && <ArticlePlaceHolder />}
+      {loading && <div>{<ArticlePlaceHolder />}</div>}
       {error && <div>{error}</div>}
-      {dataIn && (
-        <ArticleCom
-          title={dataIn.title}
-          text={dataIn.content}
-          date={dataIn.published_at}
-          image={dataIn.images && dataIn.images[0]}
-        />
-      )}
+      {dataIn && (<ArticleCom title={dataIn.title} text={dataIn.content} date={dataIn.published_at} image={dataIn.images && dataIn.images[0]}/>)}
       {/* {dataIn && <ArticlePlaceHolder/>} */}
     </div>
   );

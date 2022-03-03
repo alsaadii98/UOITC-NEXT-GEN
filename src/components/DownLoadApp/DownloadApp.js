@@ -4,7 +4,7 @@ import './styles.css'
 const DownloadApp = () => {
   return (
     <div className='lg:mt-20 flex justify-center items-center'>
-        <div className='my-20 flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-20 bg-gradient mx-10 lg:mx-0  lg:h-80 p-20 rounded-3xl shadow-lg '>
+        <div className='bg-gradient my-20 flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-20   mx-10 lg:mx-0  lg:h-80 p-20 rounded-3xl shadow-lg '>
             {/* Text */}
             <div className='space-y-10'>
                 <h1 className='text-6xl lg:text-7xl font-semibold text-white  w-80'>Download Our App</h1>
