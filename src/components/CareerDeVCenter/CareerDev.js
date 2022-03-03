@@ -35,7 +35,7 @@ export const CareerDev = () => {
             to qualify and employ our dear students
           </p>
           <button className="bg-red-800 font-semibold py-5 px-7 text-white rounded-full hover:bg-red-700 hover:transition-all duration-500 outline-none">
-            <a href="https://alumni.uoitc.edu.iq/" target={"_blank"}>
+            <a rel="noreferrer" href="https://alumni.uoitc.edu.iq/" target={"_blank"}>
               Visit The Official Website
             </a>
           </button>

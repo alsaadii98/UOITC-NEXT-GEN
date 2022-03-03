@@ -29,7 +29,7 @@ export const Tabs = () => {
     return (
         <div
             className={
-                "flex flex-col justify-center w-full items-center space-y-10 h-screen"
+                "flex flex-col justify-center w-full items-center space-y-10 "
             }
         >
             <TabsBtn data={data}/>

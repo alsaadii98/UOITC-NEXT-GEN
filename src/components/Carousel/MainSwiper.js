@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import useAxios from "../../Hooks/useAxios";
 import { CaroselPlaceHoldre } from "../SkeletonPlaceHolder/CaroselPlaceHoldre/CaroselPlaceHoldre";
-// The Shape
-import { CircleGrid } from "react-awesome-shapes";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperContent from "./SwiperContent";
@@ -19,7 +17,7 @@ import { EffectFade, Autoplay, Pagination } from "swiper";
 export default function App() {
   // Fetching the data
   const { dataIn, loading, error } = useAxios(
-    "http://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni"
+    "https://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni"
   );
   return (
     <div>
@@ -65,7 +63,6 @@ export default function App() {
                     id={item.id}
                     image={item.images[0]}
                   />
-                  
                 </SwiperSlide>
               );
             })}

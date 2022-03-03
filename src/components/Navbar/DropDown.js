@@ -38,7 +38,7 @@ const DropDown = (props) => {
                                     <Menu.Item key={index}>
                                         {({active}) => (
                                             <a
-                                                href={item.path} target="_blank"
+                                                href={item.path} target="_blank" rel='noreferrer'
                                                 className={classNames(
                                                     active ? 'bg-red-800 transition-all duration-500 text-white' : 'text-sub',
                                                     'block px-4 py-4'

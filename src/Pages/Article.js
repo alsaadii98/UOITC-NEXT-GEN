@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import ArticleCom from "../components/Article page/ArticleCom";
 import useAxios from "../Hooks/useAxios";
@@ -9,7 +7,7 @@ import BackBtn from "../components/BackBtn";
 function Article() {
   const { id } = useParams();
   const { dataIn, loading, error } = useAxios(
-    "http://mohammedhilal.pythonanywhere.com/api/articles/" + id
+    "https://mohammedhilal.pythonanywhere.com/api/articles/" + id
   );
   return (
     <div className="relative mt-10 space-y-5">

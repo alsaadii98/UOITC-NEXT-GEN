@@ -11,7 +11,7 @@ const DownloadApp = () => {
                 <div className='flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-10'>
                     {/* Apple */}
                     <div className='flex items-center justify-center space-x-4 bg-white shadow-lg py-4  px-5 rounded-xl cursor-pointer hover:scale-125 transform-all duration-500 ease-in-out '>
-                        <a className='flex items-center justify-center space-x-4' href="#">
+                        <a className='flex items-center justify-center space-x-4' href="https://apps.apple.com/us/app/uoitc/id1496550016" target={"_blank"} rel="noreferrer">
                         <FaApple className='text-red-800 w-8 h-8'/>
                         <div>
                             <h1 className='text-sm'>Available on the </h1>
@@ -21,7 +21,7 @@ const DownloadApp = () => {
                     </div>
                     {/* Google Play */}
                     <div className='flex items-center justify-center space-x-4 bg-white shadow-lg py-4  px-6 rounded-xl cursor-pointer hover:scale-125 transform-all duration-500 ease-in-out'>
-                        <a className='flex items-center justify-center space-x-4' href="#">
+                        <a className='flex items-center justify-center space-x-4' href="https://play.google.com/store/apps/details?id=iq.edu.uoitc" target={"_blank"} rel="noreferrer">
                         <FaGooglePlay className='text-red-800 w-8 h-8'/>
                         <div>
                             <h1 className='text-sm'>GET IT ON</h1>

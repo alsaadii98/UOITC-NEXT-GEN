@@ -17,7 +17,7 @@ import { FreeMode } from "swiper";
 
 function LatestArticles() {
   // Fetching the data
-  const { dataIn, loading, error } = useAxios("http://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni");
+  const { dataIn, loading, error } = useAxios("https://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni");
   const i = 5;
   return (
     <div>

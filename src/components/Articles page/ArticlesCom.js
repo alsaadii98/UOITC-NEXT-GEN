@@ -5,7 +5,7 @@ import ArticlesPagePlaceHolder from "../SkeletonPlaceHolder/ArticlesPagePlaceHol
 import BackBtn from "../BackBtn";
 const ArticlesCom = () => {
   const { dataIn, loading, error } = useAxios(
-    "http://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni"
+    "https://mohammedhilal.pythonanywhere.com/api/articles?page=1&category=uni"
   );
   const i = 12;
   const [search, setSearch] = useState("");

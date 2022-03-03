@@ -10,7 +10,7 @@ import DownloadApp from "../components/DownLoadApp/DownloadApp";
 
 function Home() {
   return (
-    <div className="mx-auto space-y-10 max-w-7xl 2xl:max-w-[110rem]">
+    <div className="lg:mx-auto space-y-10 max-w-7xl 2xl:max-w-[110rem]">
       <div className="mt-10 lg:mt-20">
         <MainSwiper />
         <LatestArticlesSwiper />

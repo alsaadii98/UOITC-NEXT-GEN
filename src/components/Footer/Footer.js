@@ -51,31 +51,31 @@ const Footer = () => {
           <div className="flex items-center space-x-2">
             {/* FaceBook */}
             <div className="p-2 bg-red-200 rounded-lg text-red-800 cursor-pointer">
-              <a href="#">
+              <a href="https://www.facebook.com/uoitc">
                 <FiFacebook className="w-5 h-5" />
               </a>
             </div>
             {/* Instagram */}
             <div className="p-2 bg-red-200 rounded-lg text-red-800 cursor-pointer ">
-              <a href="#">
+              <a href="https://www.facebook.com/uoitc">
                 <FiInstagram className="w-5 h-5" />
               </a>
             </div>
             {/* Linkedin */}
             <div className="p-2 bg-red-200 rounded-lg text-red-800 cursor-pointer ">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/uoitc-univercity-b09041102/">
                 <FiLinkedin className="w-5 h-5" />
               </a>
             </div>
             {/* Twitter */}
             <div className="p-2 bg-red-200 rounded-lg text-red-800 cursor-pointer">
-              <a href="#">
+              <a href="https://twitter.com/uoitc">
                 <FiTwitter className="w-5 h-5" />
               </a>
             </div>
             {/* Youtube */}
             <div className="p-2 bg-red-200 rounded-lg text-red-800 cursor-pointer">
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCI9pkSG4ffEcY3U6gLmBNeQ">
                 <FiYoutube className="w-5 h-5" />
               </a>
             </div>

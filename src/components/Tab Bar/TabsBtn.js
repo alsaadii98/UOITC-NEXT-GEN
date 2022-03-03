@@ -10,7 +10,7 @@ const TabsBtn = (props) => {
   return (
     <div className="flex mt-10 lg:mt-20 flex-col items-center justify-center space-y-10">
       {/* Tabs */}
-      <div className="sticky border-2 border-gray-100 top-0 flex items-center justify-between justify-items-center shadow-lg shadow-gray-200  bg-white h-20  lg:w-[24rem] rounded-2xl">
+      <div className="border-2 border-gray-100 top-0 flex items-center justify-between justify-items-center shadow-lg shadow-gray-200  bg-white h-20  lg:w-[24rem] rounded-2xl">
         <button
           onClick={() => setToggle(1)}
           className={`focus:outline-none ${
