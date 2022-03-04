@@ -61,7 +61,7 @@ export default function App() {
                     }
                     index={index}
                     id={item.id}
-                    image={item.images[0]}
+                    image={item.photos[0]}
                   />
                 </SwiperSlide>
               );

@@ -20,8 +20,14 @@ function Article() {
 
       {loading && <div>{<ArticlePlaceHolder />}</div>}
       {error && <div>{error}</div>}
-      {dataIn && (<ArticleCom title={dataIn.title} text={dataIn.content} date={dataIn.published_at} image={dataIn.images && dataIn.images[0]}/>)}
-      {/* {dataIn && <ArticlePlaceHolder/>} */}
+      {dataIn && (
+        <ArticleCom
+          title={dataIn.title}
+          text={dataIn.content}
+          date={dataIn.published_at}
+          image={dataIn.photos && dataIn.photos[0]}
+        />
+      )}
     </div>
   );
 }

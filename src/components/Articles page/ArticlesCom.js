@@ -65,7 +65,7 @@ const ArticlesCom = () => {
                       }
                       date={item.published_at}
                       id={item.id}
-                      image={item.images[0]}
+                      image={item.photos[0]}
                     />
                   </div>
                 );

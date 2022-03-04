@@ -116,7 +116,7 @@ function LatestArticles() {
                     date={item.published_at}
                     index={index}
                     id={item.id}
-                    image={item.images[0]}
+                    image={item.photos[0]}
                   />
                 </SwiperSlide>
               );
