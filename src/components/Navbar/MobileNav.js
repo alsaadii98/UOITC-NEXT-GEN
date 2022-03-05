@@ -10,11 +10,11 @@ const MobileNav = (props) => {
 
             <div>
                 {!show ? (
-                    <button onClick={() => setShow(!show)} className={'text-3xl absolute -right-8 -top-3 cursor-pointer'}>
+                    <button onClick={() => setShow(!show)} className={'text-3xl absolute -right-2 -top-4 cursor-pointer'}>
                         <MenuAlt3Icon className="h-7 w-7 text-red-800"/>
                     </button>
                 ) : (
-                    <button onClick={() => setShow(!show)} className={'absolute -top-3 -right-8 z-50 '}>
+                    <button onClick={() => setShow(!show)} className={'absolute -top-4 -right-2 z-50 '}>
                         <XIcon className="h-7 w-7 text-red-800"/>
                     </button>
                 )
