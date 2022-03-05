@@ -2,25 +2,31 @@ import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
+import { motion } from "framer-motion";
 export const SwiperContent = (props) => {
-  const imageCont = String(`https://mohammedhilal.pythonanywhere.com/`+props.image)
+  const imageCont = String(
+    `https://mohammedhilal.pythonanywhere.com/` + props.image
+  );
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3}}
+    >
       {/* Card */}
       <div className=" relative bg-white shadow-lg rounded-3xl overflow-hidden  w-80 h-[420px]">
         {/* Img */}
         <div className="h-48 w-80 overflow-hidden">
-          <img
-            src={imageCont}
-            alt=""
-          />
+          <img src={imageCont} alt="" />
         </div>
         {/* Text & Btn */}
         <div className="mt-2 px-6 py-2">
           <div className="my-2 text-right">
             <h2 className="text-sub text-sm">{props.date}</h2>
           </div>
-          <h1 className="text-main text-left text-sm font-semibold">{props.title}</h1>
+          <h1 className="text-main text-left text-sm font-semibold">
+            {props.title}
+          </h1>
           <p className=" text-main overflow-hidden text-left text-sm font-extralight">
             {props.text}
           </p>
@@ -33,7 +39,7 @@ export const SwiperContent = (props) => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default SwiperContent;

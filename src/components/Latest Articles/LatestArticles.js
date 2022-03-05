@@ -4,7 +4,7 @@ import LatestArticlesPlaceHolder from "../SkeletonPlaceHolder/LatestArticlesPlac
 import SwiperContent from "./SwiperContent";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { motion } from "framer-motion";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";

@@ -3,7 +3,6 @@ import "./Tabs.css";
 import { Conference } from "./Conference";
 import Seminars from "./Seminars";
 import WorkShops from "./WorkShops";
-
 const TabsBtn = (props) => {
   const [toggle, setToggle] = useState(1);
 
@@ -47,25 +46,27 @@ const TabsBtn = (props) => {
         {/* The Conference */}
 
         <div>
-          <div
-            className={`lg:w-[600px] mt-5 ${
+          <div className={`lg:w-[600px] mt-5 ${
               toggle === 1 ? "block" : "hidden"
             } transition-all duration-500 ease-in-out `}
           >
-            <Conference />
+            <div>
+              <Conference />
+            </div>
           </div>
         </div>
 
         {/* The Seminars */}
         <div>
-          <div
-            className={`lg:w-96 ${
+          <div className={`lg:w-96 ${
               toggle === 2
                 ? "block"
                 : "hidden transition-all duration-500 ease-in-out"
             }`}
           >
-            <Seminars />
+            <div>
+              <Seminars />
+            </div>
           </div>
         </div>
         {/* The Workshops */}

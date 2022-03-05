@@ -1,11 +1,17 @@
 import React from "react";
 import { CalendarIcon } from "@heroicons/react/outline";
+import { motion } from "framer-motion";
 const ArticleCom = (props) => {
   const imageCont = String(
     `https://mohammedhilal.pythonanywhere.com/` + props.image
   );
   return (
-    <article className=" mx-auto max-w-6xl">
+    <motion.article
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 4 }}
+      className=" mx-auto max-w-6xl"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="space-y-5 w-80 sm:w-[30rem] md:w-[40rem] lg:w-[60rem]">
           {/* Img */}
@@ -32,7 +38,7 @@ const ArticleCom = (props) => {
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 export default ArticleCom;

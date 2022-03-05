@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "./styles.css";
-
+import { motion } from "framer-motion";
 // import required modules
 import { EffectFade, Autoplay, Pagination } from "swiper";
 
@@ -30,7 +30,11 @@ export default function App() {
       )}
       {error && <div>{error}</div>}
       {dataIn && (
-        <div className="relative">
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:4}}
+        className="relative">
           <Swiper
             loop={true}
             fadeEffect={{ crossFade: true }}
@@ -67,7 +71,7 @@ export default function App() {
               );
             })}
           </Swiper>
-        </div>
+        </motion.div>
       )}
     </div>
   );
